@@ -4,12 +4,12 @@
 Summary:	List::Util and Scalar::Util perl modules
 Summary(pl):	Modu³y perla List::Util i Scalar::Util
 Name:		perl-Scalar-List-Utils
-Version:	1.12
+Version:	1.13
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2be5899d444e2178fcc84c14a4b59f83
+# Source0-md5:	2b1ccf73ba7f290021587b3a681a9e69
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.005
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
