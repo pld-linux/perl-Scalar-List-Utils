@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Scalar
-%define	pnam	List-Utils
+%define		pdir	Scalar
+%define		pnam	List-Utils
 Summary:	List::Util and Scalar::Util perl modules
 Summary(pl):	Modu³y perla List::Util i Scalar::Util
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Scalar-List-Utils
 Version:	1.0701
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -43,8 +43,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
+%dir %{perl_sitearch}/List
 %{perl_sitearch}/List/*.pm
+%dir %{perl_sitearch}/Scalar
 %{perl_sitearch}/Scalar/*.pm
+%dir %{perl_sitearch}/auto/List
 %dir %{perl_sitearch}/auto/List/Util
 %attr(755,root,root) %{perl_sitearch}/auto/List/Util/*.so
 %{perl_sitearch}/auto/List/Util/*.bs
