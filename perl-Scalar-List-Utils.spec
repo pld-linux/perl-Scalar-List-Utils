@@ -11,7 +11,7 @@ Name:		perl-Scalar-List-Utils
 Version:	1.13
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2b1ccf73ba7f290021587b3a681a9e69
