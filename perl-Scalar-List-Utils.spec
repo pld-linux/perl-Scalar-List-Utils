@@ -5,11 +5,11 @@ Summary:	List::Util and Scalar::Util perl modules
 Summary(pl):	Modu³y perla List::Util i Scalar::Util
 Name:		perl-Scalar-List-Utils
 Version:	1.11
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.005
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,8 @@ zbyt du¿a, a rozmiar za ma³y na tworzenie oddzielnych rozszerzeñ.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL -xs
+%{__perl} Makefile.PL -xs \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 #%%{__make} test
 
@@ -43,12 +44,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%dir %{perl_sitearch}/List
-%{perl_sitearch}/List/*.pm
-%dir %{perl_sitearch}/Scalar
-%{perl_sitearch}/Scalar/*.pm
-%dir %{perl_sitearch}/auto/List
-%dir %{perl_sitearch}/auto/List/Util
-%attr(755,root,root) %{perl_sitearch}/auto/List/Util/*.so
-%{perl_sitearch}/auto/List/Util/*.bs
+%dir %{perl_vendorarch}/List
+%{perl_vendorarch}/List/*.pm
+%dir %{perl_vendorarch}/Scalar
+%{perl_vendorarch}/Scalar/*.pm
+%dir %{perl_vendorarch}/auto/List
+%dir %{perl_vendorarch}/auto/List/Util
+%attr(755,root,root) %{perl_vendorarch}/auto/List/Util/*.so
+%{perl_vendorarch}/auto/List/Util/*.bs
 %{_mandir}/man3/*
