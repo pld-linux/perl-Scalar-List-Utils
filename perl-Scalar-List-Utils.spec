@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Scalar
-%define		pnam	List-Utils
+%define	pdir	Scalar
+%define	pnam	List-Utils
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
 Summary(pl):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
