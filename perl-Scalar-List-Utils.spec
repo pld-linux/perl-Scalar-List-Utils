@@ -4,7 +4,7 @@
 Summary:	List::Util and Scalar::Util perl modules
 Summary(pl):	Modu³y perla List::Util i Scalar::Util
 Name:		perl-Scalar-List-Utils
-Version:	1.09
+Version:	1.11
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
