@@ -28,7 +28,7 @@ zbyt du¿a, a rozmiar za ma³y na tworzenie oddzielnych rozszerzeñ.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL -xs
+%{__perl} Makefile.PL -xs
 %{__make} OPTIMIZE="%{rpmcflags}"
 #%{__make} test
 
