@@ -1,4 +1,3 @@
-# $Revision: 1.2 $
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Scalar
 %define	pnam	List-Utils
@@ -20,22 +19,23 @@ expressed would be nice to have in the perl core, but the usage would
 not really be high enough to warrant the use of a keyword, and the size
 so small such that being individual extensions would be wasteful.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten pakiet zawiera wybrane procedury, które wed³ug niektórych ludzi
+powinny znale¼æ siê w g³ównym pakiecie Perla, ale u¿yteczno¶æ nie jest
+zbyt du¿a, a rozmiar za ma³y na tworzenie oddzielnych rozszerzeñ.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL -xs
-%{__make}
+%{__make} OPTIMIZE="%{rpmcflags}"
 #%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
