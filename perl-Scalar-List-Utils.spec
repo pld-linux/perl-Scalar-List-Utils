@@ -30,7 +30,7 @@ zbyt du¿a, a rozmiar za ma³y na tworzenie oddzielnych rozszerzeñ.
 %build
 %{__perl} Makefile.PL -xs
 %{__make} OPTIMIZE="%{rpmcflags}"
-#%{__make} test
+#%%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
