@@ -1,0 +1,3 @@
+- added dirs: %{perl_sitearch}/List, %{perl_sitearch}/Scalar and
+  %{perl_sitearch}/auto/List
+- release 2
