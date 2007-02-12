@@ -6,7 +6,7 @@
 %define		pdir	Scalar
 %define		pnam	List-Utils
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
-Summary(pl):	List::Util i Scalar::Util - wybÛr procedur skalarnych ogÛlnego zastosowania
+Summary(pl.UTF-8):   List::Util i Scalar::Util - wyb√≥r procedur skalarnych og√≥lnego zastosowania
 Name:		perl-Scalar-List-Utils
 Version:	1.18
 Release:	1
@@ -25,10 +25,10 @@ expressed would be nice to have in the perl core, but the usage would
 not really be high enough to warrant the use of a keyword, and the size
 so small such that being individual extensions would be wasteful.
 
-%description -l pl
-Ten pakiet zawiera wybrane procedury, ktÛre wed≥ug niektÛrych ludzi
-powinny znaleºÊ siÍ w g≥Ûwnym pakiecie Perla, ale uøyteczno∂Ê nie jest
-zbyt duøa, a rozmiar za ma≥y na tworzenie oddzielnych rozszerzeÒ.
+%description -l pl.UTF-8
+Ten pakiet zawiera wybrane procedury, kt√≥re wed≈Çug niekt√≥rych ludzi
+powinny znale≈∫ƒá siƒô w g≈Ç√≥wnym pakiecie Perla, ale u≈ºyteczno≈õƒá nie jest
+zbyt du≈ºa, a rozmiar za ma≈Çy na tworzenie oddzielnych rozszerze≈Ñ.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
