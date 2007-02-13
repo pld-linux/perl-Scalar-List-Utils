@@ -6,7 +6,7 @@
 %define		pdir	Scalar
 %define		pnam	List-Utils
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
-Summary(pl.UTF-8):   List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
+Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
 Version:	1.18
 Release:	1
