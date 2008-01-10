@@ -37,6 +37,7 @@ zbyt duża, a rozmiar za mały na tworzenie oddzielnych rozszerzeń.
 %{__perl} Makefile.PL -xs \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
