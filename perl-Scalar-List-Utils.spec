@@ -8,13 +8,13 @@
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
-Version:	1.19
-Release:	2
+Version:	1.21
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Scalar/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9b6b397aa79e6fc8e70e894721f51b1f
+# Source0-md5:	8b59aa84b5c1da7ad651f6f7973f8e29
 URL:		http://search.cpan.org/dist/Scalar-List-Utils/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains a selection of subroutines that people have
 expressed would be nice to have in the perl core, but the usage would
-not really be high enough to warrant the use of a keyword, and the size
-so small such that being individual extensions would be wasteful.
+not really be high enough to warrant the use of a keyword, and the
+size so small such that being individual extensions would be wasteful.
 
 %description -l pl.UTF-8
 Ten pakiet zawiera wybrane procedury, które według niektórych ludzi
@@ -57,8 +57,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc Change* README
 %dir %{perl_vendorarch}/List
 %{perl_vendorarch}/List/*.pm
+%dir %{perl_vendorarch}/List/Util
+%{perl_vendorarch}/List/Util/*.pm
 %dir %{perl_vendorarch}/Scalar
 %{perl_vendorarch}/Scalar/*.pm
+%dir %{perl_vendorarch}/Scalar/Util
+%{perl_vendorarch}/Scalar/Util/*.pm
 %dir %{perl_vendorarch}/auto/List
 %dir %{perl_vendorarch}/auto/List/Util
 %attr(755,root,root) %{perl_vendorarch}/auto/List/Util/*.so
