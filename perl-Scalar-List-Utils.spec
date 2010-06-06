@@ -13,7 +13,7 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Scalar/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2e7909f8737cd6eecd8520b77326916b
 URL:		http://search.cpan.org/dist/Scalar-List-Utils/
 BuildRequires:	perl-devel >= 1:5.8.0
