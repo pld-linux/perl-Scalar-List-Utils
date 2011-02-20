@@ -8,13 +8,13 @@
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
-Version:	1.23
-Release:	3
+Version:	1.23_03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2e7909f8737cd6eecd8520b77326916b
+Source0:	http://www.cpan.org/modules/by-module/Scalar/GBARR/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	2e7eb6669cdf4b407b7e262aaa0cb10b
 URL:		http://search.cpan.org/dist/Scalar-List-Utils/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -54,17 +54,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Change* README
+%doc Changes README
 %dir %{perl_vendorarch}/List
-%{perl_vendorarch}/List/*.pm
+%{perl_vendorarch}/List/Util.pm
 %dir %{perl_vendorarch}/List/Util
 %{perl_vendorarch}/List/Util/*.pm
 %dir %{perl_vendorarch}/Scalar
-%{perl_vendorarch}/Scalar/*.pm
-%dir %{perl_vendorarch}/Scalar/Util
-%{perl_vendorarch}/Scalar/Util/*.pm
+%{perl_vendorarch}/Scalar/Util.pm
 %dir %{perl_vendorarch}/auto/List
 %dir %{perl_vendorarch}/auto/List/Util
-%attr(755,root,root) %{perl_vendorarch}/auto/List/Util/*.so
-%{perl_vendorarch}/auto/List/Util/*.bs
-%{_mandir}/man3/*
+%attr(755,root,root) %{perl_vendorarch}/auto/List/Util/Util.so
+%{perl_vendorarch}/auto/List/Util/Util.bs
+%{_mandir}/man3/List::Util*.3pm*
+%{_mandir}/man3/Scalar::Util.3pm*
