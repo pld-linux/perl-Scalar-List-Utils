@@ -1,4 +1,7 @@
 #
+# perl modules provided by this package are part of perl-modules
+# DO NOT send this package to Th builders
+#
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
@@ -9,7 +12,7 @@ Summary:	List::Util and Scalar::Util - selection of general-utility scalar subro
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
 Version:	1.25
-Release:	1
+Release:	1.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,6 +21,7 @@ Source0:	http://www.cpan.org/modules/by-module/Scalar/%{pdir}-%{pnam}-%{version}
 URL:		http://search.cpan.org/dist/Scalar-List-Utils/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	th-blocker, not for ftp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
