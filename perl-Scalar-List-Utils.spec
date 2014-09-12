@@ -68,6 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/List
 %dir %{perl_vendorarch}/auto/List/Util
 %attr(755,root,root) %{perl_vendorarch}/auto/List/Util/Util.so
-%{perl_vendorarch}/auto/List/Util/Util.bs
 %{_mandir}/man3/List::Util*.3pm*
 %{_mandir}/man3/Scalar::Util.3pm*
