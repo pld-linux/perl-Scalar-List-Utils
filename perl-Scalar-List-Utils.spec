@@ -1,6 +1,6 @@
 #
 # perl modules provided by this package are part of perl-modules
-# DO NOT send this package to Th builders
+# DO NOT send this package to Th builders if version is <= provided by perl-modules
 #
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
@@ -12,7 +12,7 @@ Summary:	List::Util and Scalar::Util - selection of general-utility scalar subro
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
 Version:	1.46
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -65,8 +65,11 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/List/Util/*.pm
 %dir %{perl_vendorarch}/Scalar
 %{perl_vendorarch}/Scalar/Util.pm
+%dir %{perl_vendorarch}/Sub
+%{perl_vendorarch}/Sub/Util.pm
 %dir %{perl_vendorarch}/auto/List
 %dir %{perl_vendorarch}/auto/List/Util
 %attr(755,root,root) %{perl_vendorarch}/auto/List/Util/Util.so
 %{_mandir}/man3/List::Util*.3pm*
 %{_mandir}/man3/Scalar::Util.3pm*
+%{_mandir}/man3/Sub::Util.3pm*
