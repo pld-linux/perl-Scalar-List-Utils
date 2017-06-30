@@ -11,13 +11,13 @@
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
-Version:	1.47
-Release:	3
+Version:	1.48
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Scalar/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	caf338334a64cd23ade695ba1561252c
+# Source0-md5:	38c408dcaee0a9c4294aff6111a3a469
 URL:		http://search.cpan.org/dist/Scalar-List-Utils/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
