@@ -12,7 +12,7 @@ Summary:	List::Util and Scalar::Util - selection of general-utility scalar subro
 Summary(pl.UTF-8):	List::Util i Scalar::Util - wybór procedur skalarnych ogólnego zastosowania
 Name:		perl-Scalar-List-Utils
 Version:	1.50
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
