@@ -5,7 +5,6 @@
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Scalar
 %define		pnam	List-Utils
 Summary:	List::Util and Scalar::Util - selection of general-utility scalar subroutines
